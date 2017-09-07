@@ -2,6 +2,6 @@ services:
     tatiana5.highlightfirstpost.listener:
         class: tatiana5\highlightfirstpost\event\listener
         arguments:
-            - @template
+            - '@template'
         tags:
             - { name: event.listener }
