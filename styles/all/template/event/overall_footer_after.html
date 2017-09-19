@@ -1,7 +1,11 @@
 <!-- IF FIRST_POST_SHOW -->
 <script>
-$(document).ready(function() {
+function highlight_first_post()
+{
 	$('.first').parents('div.post').addClass('firstpost');
-});
+}
+
+$(document).ready(highlight_first_post);
+$('#qr_posts').on('qr_loaded', highlight_first_post);
 </script>
 <!-- ENDIF -->
